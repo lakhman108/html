@@ -69,17 +69,60 @@
         font-size:  2.5rem;
         border-radius: 50%;
         animation: slide 1s ease-in-out;
+       
     }
+    #github{
+        animation: slidetop 2s ease-in-out;
+    }
+#linkedin{
+    animation: slideside 2s ease-in-out;
+}
+#instagram{
+    animation: slideside2 2s ease-in-out;
+}
 
-
+  
     @keyframes slide{
         0%{
-            opacity: 0;
+           
             transform: translateY(6.25rem);
 
         }
         100%{
             transform: translateY(0rem);
-            opacity: 1;
+          
+        }
+    }
+     @keyframes slidetop{
+        0%{
+        
+            transform: translateY(6.25rem);
+
+        }
+        100%{
+            transform: translateY(0rem);
+           
+        }
+    }
+    @keyframes slideside{
+        0%{
+        
+            transform: translateX(-13rem);
+
+        }
+        100%{
+            transform: translateX(0rem);
+          
+        }
+    }
+    @keyframes slideside2{
+       0%{
+           
+            transform: translateX(13rem);
+
+        }
+        100%{
+            transform: translateX(0rem);
+           
         }
     }
